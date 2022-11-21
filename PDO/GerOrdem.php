@@ -145,7 +145,7 @@
                                 <td><?php echo $row->nomeServico?></td>
                                 <td><?php echo $row->precoServico?></td>
                                 <td>
-                                    <button type="button" class="btn btn-primary" onclick="addServico(1, 'formatar notebook',250)"><i class="bi bi-plus-circle"></i></button>
+                                    <button type="button" class="btn btn-primary" onclick="addServico(<?php echo $row->idServico ?>, '<?php echo $row->nomeServico ?>', <?php echo $row->precoServico ?>)"><i class="bi bi-plus-circle"></i></button>
                                 </td>
                             </tr>
                             <tr>
